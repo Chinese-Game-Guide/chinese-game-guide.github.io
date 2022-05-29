@@ -1,0 +1,5 @@
+{% if include.name %}<div>{{ include.name }}</div>
+{% endif %}{% assign collection = include.collection %}{% assign _docs = collection.docs | reverse -%}
+<ul>{% for document in _docs %}{% unless document.no_index %}
+  <li><a href="{{ document.url | relative_url }}">{{ document.title }}</a></li>
+</ul>{% endunless %}{% endfor %}

@@ -1,0 +1,16 @@
+node_modules/
+
+.bundle/
+vendor/
+Gemfile
+Gemfile.lock
+
+.vscode/
+*.code-workspace
+
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+download/

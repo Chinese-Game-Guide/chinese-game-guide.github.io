@@ -1,0 +1,32 @@
+collections:
+  3ds:
+    output: true
+    sort_by: date
+  nds:
+    output: true
+    sort_by: date
+  ns:
+    output: true
+    sort_by: date
+collections_dir: pages
+defaults:
+  - values:
+      layout: "default"
+  - scope:
+      path: "pages/*/index.*"
+    values:
+      no_index: true
+exclude:
+  - .vscode/
+  - node_modules/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+locale: zh
+markdown: kramdown
+name: 中文游戏攻略
+plugins:
+  - jekyll-sitemap
+  - jekyll-sass-converter

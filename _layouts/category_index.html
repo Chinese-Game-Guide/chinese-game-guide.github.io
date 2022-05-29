@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{% assign collection = site.collections | where: "label", page.collection | first %}{% include category_index.html collection=collection %}
+{% assign content_s = content | strip %}{% if content_s != "" %}
+<hr>{% endif %}
+{{ content }}
